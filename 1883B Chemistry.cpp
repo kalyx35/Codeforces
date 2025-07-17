@@ -9,13 +9,11 @@ int main()
 		long long n,k;
 		cin>>n>>k;
 		char s[n];
-		for(int j=0;j<n;j++)
-			cin>>s[j];
 		long freq[26]={0};
 		for(int j=0;j<n;j++)
-		{	
-			int k=(int)s[j];
-			++freq[k-97];
+		{
+			cin>>s[j];
+			++freq[s[j]-97];
 		}
 		long f=0;
 		for(int j=0;j<26;j++)
